@@ -49,7 +49,7 @@ int main()
             i = 0;
     }
     cout << "|\n\n";
-    cout << "Process\tArrival Time\tBurst Time\tTurnaround Time\tWaiting Time" << endl;
+    cout << "Process\tArrival Time\tBurst Time\tTurnaround Time\t\tWaiting Time" << endl;
     for(i=0; i<nop; i++)
     {
         cout<<"P["<<i+1<<"]\t"<<setw(8)<<at[i]<<setw(16)<<bt[i]<<setw(21)<<time-at[i]<<setw(20)<<time-at[i]-bt[i]<<endl;
