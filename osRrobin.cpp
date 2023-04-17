@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <random>
 #include <thread>
+
 using namespace std;
 
 void schedulingAlgorithm(int nop, int qt, vector<int>& at, vector<int>& bt) {
