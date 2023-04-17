@@ -39,10 +39,10 @@ void schedulingAlgorithm(int nop, int qt, vector<int>& at, vector<int>& bt) {
         }
     }
     cout << "|\n\n";
-    cout << "Process\tArrival Time\tBurst Time\tTurnaround Time\tWaiting Time" << endl;
+    cout << "Process\tArrival Time\tBurst Time\tTurnaround Time\t\tWaiting Time" << endl;
     for(i=0; i<nop; i++)
     {
-        cout<<"P["<<i+1<<"]\t"<<setw(8)<<at[i]<<setw(16)<<bt[i]<<setw(21)<<time-at[i]<<setw(20)<<time-at[i]-bt[i]<<endl;
+        cout<<"P["<<i+1<<"]"<<"\t\t"<<at[i]<<"\t\t"<<bt[i]<<"\t\t"<<time-at[i]<<"\t\t\t"<<time-at[i]-bt[i]<<endl;
     }
     cout << "Average Waiting Time= " << wt * 1.0 / nop << endl;
     cout << "Average Turnaround Time = " << tt * 1.0 / nop << endl;
